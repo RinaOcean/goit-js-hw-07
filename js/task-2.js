@@ -13,7 +13,7 @@ const ingredients = [
   "Зелень",
   "Приправы",
 ];
-
+// ВАРИАНТ 1
 // const ingrRef = document.querySelector("#ingredients");
 // const listRef = document.createElement("li");
 // listRef.classList.add("product");
@@ -34,11 +34,11 @@ const ingredients = [
 //   createList(ingredient)
 // );
 
+// ВАРИАНТ 2
 const ingrRef = document.querySelector("#ingredients");
 
-const createList = (ingredient) => {
+const createListEl = (ingredient) => {
   const listRef = document.createElement("li");
-  listRef.classList.add("product");
   listRef.textContent = ingredient;
   return listRef;
 };
