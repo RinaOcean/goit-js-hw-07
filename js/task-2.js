@@ -21,15 +21,30 @@ const ingredients = [
 // console.log(ingrRef);
 // ingrRef.appendChild(listRef);
 
-const createList = (ingredient) => {
-  const ingrRef = document.querySelector("#ingredients");
+// const ingrRef = document.querySelector("#ingredients");
+// const createList = (ingredient) => {
 
+//   const listRef = document.createElement("li");
+//   listRef.classList.add("product");
+//   listRef.textContent = ingredient;
+//   ingrRef.appendChild(listRef);
+// };
+
+// const ingredientsListing = ingredients.forEach((ingredient) =>
+//   createList(ingredient)
+// );
+
+const ingrRef = document.querySelector("#ingredients");
+
+const createList = (ingredient) => {
   const listRef = document.createElement("li");
   listRef.classList.add("product");
   listRef.textContent = ingredient;
-  ingrRef.appendChild(listRef);
+  return listRef;
 };
 
-const ingredientsListing = ingredients.forEach((ingredient) =>
+const ingredientsListing = ingredients.map((ingredient) =>
   createList(ingredient)
 );
+
+ingrRef.append(...ingredientsListing);
