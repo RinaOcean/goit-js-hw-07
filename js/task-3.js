@@ -32,7 +32,7 @@ const galleryListRef = document.querySelector("#gallery");
 const createImgsList = (image) => {
   galleryListRef.insertAdjacentHTML(
     "beforeend",
-    `<li><img src = ${image.url} alt = '${image.alt}'></li>`
+    `<li class = "gallery-element"><img src = ${image.url} alt = '${image.alt}'></li>`
   );
 };
 
