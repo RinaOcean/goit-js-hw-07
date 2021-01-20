@@ -11,3 +11,7 @@ img {
   list-style-type: none;
   margin: auto;
 }
+
+#counter {
+  margin-bottom: 40px;
+}
