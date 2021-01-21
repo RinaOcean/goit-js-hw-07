@@ -27,3 +27,8 @@ img {
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+#font-size-control {
+  display: block;
+  margin-top: 40px;
+}
