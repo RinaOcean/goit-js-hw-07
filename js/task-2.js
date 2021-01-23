@@ -17,7 +17,7 @@ const ingredients = [
 // const ingrRef = document.querySelector("#ingredients");
 // const listRef = document.createElement("li");
 // listRef.classList.add("product");
-// // listing.textContent = ingredient;
+//  listing.textContent = ingredient;
 // console.log(ingrRef);
 // ingrRef.appendChild(listRef);
 
@@ -44,7 +44,7 @@ const createListEl = (ingredient) => {
 };
 
 const ingredientsListing = ingredients.map((ingredient) =>
-  createList(ingredient)
+  createListEl(ingredient)
 );
 
 ingrRef.append(...ingredientsListing);

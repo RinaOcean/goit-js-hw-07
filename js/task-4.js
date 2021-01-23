@@ -23,15 +23,13 @@ const counterValueRef = document.querySelector("#value");
 let counterValue = 0;
 
 const increment = () => {
-  counterValue += +btnIncrementtRef.textContent;
+  counterValue += 1;
   counterValueRef.textContent = counterValue;
-  return;
 };
 
 const decrement = () => {
-  counterValue += +btnDecrementRef.textContent;
+  counterValue -= 1;
   counterValueRef.textContent = counterValue;
-  return counterValueRef.textContent;
 };
 
 btnDecrementRef.addEventListener("click", decrement);
