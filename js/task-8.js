@@ -20,7 +20,7 @@ const btnDestroyRef = document.querySelector('[data-action="destroy"]');
 
 const createBoxes = (amount) => {
   const defaultSize = 30;
-
+  destroyBoxes();
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     const newSize = defaultSize + i * 10;
