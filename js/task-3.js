@@ -37,5 +37,3 @@ const createImgsList = (image) => {
 };
 
 const imagesListing = images.map((image) => createImgsList(image));
-
-galleryListRef.append(imagesListing);
